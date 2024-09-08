@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EvenPage using Grids</title>
+        <style>
+            .gridMain_container{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(6,1fr);
+               
+                gap: 10px;
+                height: 100vh;
+            }
+            .griditems{
+                background-color: aliceblue;
+                border-color: black;
+                border-radius: 8px;
+                border: solid;
+                
+                
+            }
+            .gridTitle{
+                grid-column: 2/4;
+            }
+
+            .gridTitle p{
+                font-size: 32px;
+                color: red;   
+                text-align: center;
+                font-weight:700 ;
+                letter-spacing: 2px;
+                font-style: italic;
+
+            }
+            .grid1{
+                grid-row: 2/4;
+            }
+            .grid2{
+                grid-column: 2/3;
+                grid-row: 2/4;
+            }
+            .grid3{
+                grid-column: 3/4;
+                grid-row: 2/4;
+            }
+
+            .grid4{
+                grid-column: 4/5;
+                grid-row: 2/4;
+            }
+            .grid5{
+                grid-column: 1/2;
+                grid-row: 4/6; 
+            }
+            .grid6{
+                grid-column: 2/3;
+                grid-row: 4/6;
+            }
+            .grid7{
+                grid-column: 3/4;
+                grid-row: 4/6; 
+            }
+            .grid8{
+                grid-column: 4/5;
+                grid-row: 4/6;               
+            }
+
+            .griditems h2{
+                text-align: center;
+                background-color: blueviolet;
+                color: antiquewhite;
+                margin: 0;
+                padding: auto;
+            }
+
+            .gridBody{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                margin: 10px 5px;       
+                
+            }
+            .gridBody div p{
+                width: 200px;
+                min-height: 180px;
+                background-color: aquamarine;
+                               
+                text-align: center;
+                border: solid;
+                border-color: black;
+                border-radius: 8px;               
+            }
+
+            .gridBody div:nth-child(2) button{
+                background-color: lightblue;
+                color: black;
+                border-radius: 4px;
+            }
+
+            @media(max-width:1366px){
+                .gridMain_container .griditems{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+           
+
+        </style>
+    </head>
+    <body>
+        <div class="gridMain_container">
+            <div class="gridTitle griditems">
+                <p>Search Event</p>
+                
+            </div>
+            <div class="grid1 griditems">
+                <h2>Event 1</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid2 griditems">
+                <h2>Event 2</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid3 griditems">
+                <h2>Event 3</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid4 griditems">
+                <h2>Event 4</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid5 griditems"> 
+                <h2>Event 5</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid6 griditems">
+                <h2>Event 6</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid7 griditems">
+                <h2>Event 7</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid8 griditems">
+                <h2>Event 8</h2>
+                <div class="gridBody">
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <h4>23-May-2024</h4>
+                        <h4>Seats Available : 23</h4>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DEMO</title>
+    <style>
+        * {
+            margin: auto;
+            padding: auto;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        html{
+            scroll-behavior: smooth;
+           
+        }
+
+        section {
+
+            background-color: rgba(202, 211, 230, 0.356);
+        }
+
+        .navbar {
+            
+            background-color: #13274F;
+            height: 100%;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #E6E6E9;
+            grid-column: 1/-1;
+            grid-row: 1/2;
+            width: 100%;
+          
+        }
+
+
+
+        .navbar .logo {
+            font-size: 32px;
+            font-weight: bolder;
+        }
+
+        .nav {
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            height: 100%;
+            overflow: hidden;
+            /* align-self: self-end; */
+        }
+
+        .navbar ul li {
+
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #E6E6E9;
+            font-style: italic;
+            font-weight: 700;
+            display: flex;
+            height: 100%;
+            padding: 0 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar a:hover {
+            background-color: #002e62b4;
+            color: azure;
+            transition: 0.5s;
+            text-shadow: black;
+        }
+
+        .contents {
+            background-color: rgba(202, 211, 230, 0.356);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 70px 1fr;
+            margin-top: 0px;
+            padding-top: 0px;
+            box-sizing: border-box;
+            align-items: center;
+            height: 100vh;
+
+
+            /* padding-top: 70px; */
+        }
+
+        .cont1 {
+            /* grid-column: 1/3;
+                height: 500px;              
+               text-align: center; */
+            grid-column: 1/3;
+            /* height: 500px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+        }
+
+        .cont2 {
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+            /* Adds shadow effect */
+        }
+
+        .contents .cont2 {
+            grid-column: 3/4;
+
+            display: flex;
+            justify-content: center;
+
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .cont-shadow {
+            text-shadow: 10px 10px 50px #002e62b4;
+
+        }
+
+        .cont3 .header {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 90px 1fr;
+            width: 100%;
+            box-sizing: border-box;
+            overflow-x: hidden;
+
+        }
+
+        .cont3 .header h2 {
+            grid-column: 1/-1;
+
+            height: 100%;
+            align-content: center;
+
+            padding: 10px;
+            margin: 0px;
+            background-color: #13274F;
+            color: #E6E6E9;
+            box-sizing: border-box;
+
+        }
+
+
+        .cont3-el {
+            grid-column: 1/3;
+            width: 100%;
+            /* background-color: yellow; */
+            /* align-self: top; */
+            align-content: center;
+            height: 100%;
+
+
+
+
+        }
+
+        .cont3-el ol {
+            list-style: none;
+        }
+
+
+        .cont3-li-header h3 {
+
+            color: #28282B;
+            font-size: 28px;
+
+        }
+
+        li .cont3-li-header h3 p {
+
+            font-size: 20px;
+            font-style: italic;
+            color: black;
+
+
+        }
+
+        .cont3-li-header p {
+
+            padding-right: auto;
+
+            width: 200px;
+            align-content: end;
+
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+
+
+        li .cont3-el h4 {
+            margin: 0px 10px 10px auto;
+        }
+
+        .cont3-li-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li h4 {
+            color: #343434;
+            margin-left: 0px 10px 10px auto;
+        }
+
+        li .cont3-li-header h3 {
+            margin-left: 0px;
+            /* margin-top: 10px; */
+            width: 400px;
+
+        }
+
+        ul {
+            padding-bottom: 20px;
+        }
+
+        /* .work-pts li{
+            position: relative;
+            
+            list-style-image: url(icons/arrow_15795730.png);
+        } */
+
+        .Skillset {
+            grid-column: 3/4;
+            border: solid;
+            border-width: 1px;
+            /* width: 100%; */
+            margin-right: auto;
+            border-radius: 8px;
+
+            margin: 30px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.079);
+        }
+
+        .Skillset h3 {
+            text-align: center;
+            background-color: #13274F;
+            color: #E6E6E9;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .outer-ul li {
+            /* display: flex;
+            flex-direction: row;
+            justify-content: flex-start; */
+            line-height: 50px;
+
+            /* list-style-image: url(/icons/arrow_15795730.png);  */
+
+        }
+        .header h2 a {
+            font-size: 10px;
+        }
+
+
+
+        .outer-ul li p {
+            margin: auto 5px;
+            padding: 0px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav class="navbar">
+    <div class="container">
+      <div class="logo">Arjun Vijayaraja</div>
+      <ul class="nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav> -->
+    <section id="contents" class="contents">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Arjun Vijayaraja</div>
+                <ul class="nav">
+                    <li><a href="#contents">About</a></li>
+                    <li><a href="#Exp">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p class="cont1 cont-shadow">
+            "I am a Software Test Engineer with a strong foundation in ensuring software quality and performance.
+            Currently, I am expanding my expertise by pursuing a Java Fullstack Development course from Guvi, enhancing
+            my skills in front-end and back-end development. Additionally, I have a solid grasp of Power BI for data
+            analysis and visualization, allowing me to deliver comprehensive insights. I am passionate about combining
+            technical knowledge and analytical skills to drive innovative solutions and ensure exceptional software
+            delivery."
+
+        </p>
+
+
+        <img class="cont2 cont-shadow" src="Images/pexels-minan1398-1066176.jpg"
+            alt="imagenotloaded" />
+    </section>
+    <section id="Exp" class="cont3">
+        <div class="header">
+            
+            <h2><a href="#contents"><image src="/icons/arrow_15l795730.png" alt="back Button Image not found" width="30px" height="30px" ></image> </a>My Work Experience</h2>
+            <div class="cont3-el">
+                <ol>
+                    <li>
+                        <div class="cont3-li-header">
+                            <h3>LG Balakrishnan & Bros</h3>
+                            <p><em> April 2021 - March 2022</em></p>
+                        </div>
+                        <h4>Designation: Graduate Management Trainee </h4>
+                        <ul class="work-pts">
+                            <li>Creating Sales Reports for the branches located all over India</li>
+                            <li>Testing the CRM Portal</li>
+                            <li>Creating Sales Dashboards using PowerBI and Excel for Comittee Meetings</li>
+                        </ul>
+                    <li>
+                        <div class="cont3-li-header">
+                            <h3>MaxByte technologies</h3>
+                            <p><em>May 2022 - August 2022</em></p>
+                        </div>
+                        <h4>Intern</h4>
+                        <ul class="work-pts">
+                            <li>Creating Sales Reports for the branches located all over India</li>
+                            <li>Testing the CRM Portal</li>
+                            <li>Creating Sales Dashboards using PowerBI and Excel for Comittee Meetings</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cont3-li-header">
+                            <h3>PSG Softwaretechnologies</h3>
+                            <p><em>Feburary 2023 - Till Date</em></p>
+                        </div>
+                        <h4>Software Test Engineer </h4>
+                        <ul class="work-pts">
+                            <li>Creating and Executing Test Cases for Purchase Sales Modules</li>
+                            <li>Bug Tracking</li>
+                            <li>Created PowerBi dashboars for Purchase and account comittee meetings</li>
+                            <li>Involved in few dev activities (Master pages)</li>
+                        </ul>
+
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>GUVI Fullstack Java Development </li>
+                            <li>Automation testing using JAVA and Selenium</li>
+                            <li>Basics of Oracle, SQL server</li>
+
+                        </ul>
+                </ol>
+            </div>
+
+            <div class="Skillset">
+                <h3>Skilset</h3>
+                <ul class="outer-ul">
+
+                    <!-- <li>Programing Languages:
+                        <p>Java, JS, HTML, CSS</p>
+
+                    </li>
+                
+                    
+                    <li>Database Technologies:
+                        <p>My SQL, SQL-Server</p>
+                    </li>
+                    
+                    <li>Visualization Tools:
+                       <p>Power BI, Excel</p>
+                    </li> -->
+
+
+                    <li>Programing Languages: Java, JS, HTML, CSS</li>
+                    <li>Database Technologies: My SQL, SQL-Server</li>
+                    <li>Visualization Tools: Power BI, Excel </li>
+                </ul>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+</body>
+
+</html>

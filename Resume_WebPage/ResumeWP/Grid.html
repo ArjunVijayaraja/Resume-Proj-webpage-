@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Demo for Practice</title>
+        <style>
+
+            p{
+                color: whitesmoke;
+                margin: 0;
+                padding: 20px;
+            }
+            .grid1{
+                background-color: black; 
+                grid-column: 1/3;               
+            }
+            .grid2{
+                background-color: blue;
+                grid-column: 2/5;
+            }
+            .grid3{
+                background-color: red;
+                grid-column: 1/3;
+               
+                
+            }
+            .grid4{
+                background-color: yellow;
+            }
+            .grid5{
+                background-color: orange;
+                display: grid;
+                align-content: center;
+            }
+
+            .mainContainer{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                row-gap: 10px;
+                column-gap: 10px;   
+                align-content: center;       
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="griditem grid1">
+                <p>Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ipsum. Temporibus alias voluptas labore nobis? Officiis nobis animi blanditiis a, odit temporibus! Ad, amet excepturi fuga distinctio molestiae doloribus quasi!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore praesentium deleniti harum autem cumque ad ex ipsa dolorem blanditiis unde, doloribus repellendus odit sint perferendis aut beatae laboriosam ab sed.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis similique beatae excepturi sint amet accusantium molestias mollitia architecto optio deleniti quibusdam fugit dicta fuga suscipit, unde quod dolorum hic?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum a eaque nostrum quasi repudiandae aperiam! Quos aliquid, iure reiciendis odio, fugit sit eos aspernatur quis error laborum ullam in nulla. </p>
+            </div>
+            <div class="griditem grid2">
+                <p>Item2</p>
+            </div>
+            <div class="griditem grid3">
+                <p>Item3</p>
+            </div>
+            <div class="griditem grid4">
+                <p>Item4</p>
+            </div>
+
+            <div class="griditem grid5">
+                <p>Item5</p>
+            </div>
+
+        </div>
+    </body>
+</html>
